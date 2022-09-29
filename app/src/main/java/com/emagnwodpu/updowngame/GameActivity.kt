@@ -28,13 +28,13 @@ class GameActivity : AppCompatActivity() {
         var d = intent.getIntExtra("difficulty", 1)
         if (d == 0) {
             indexAll = 40
-            indexCorrect = Random.nextInt(30)+1
+            indexCorrect = Random.nextInt(40)+1
         } else if (d == 1) {
             indexAll = 60
-            indexCorrect = Random.nextInt(50)+1
+            indexCorrect = Random.nextInt(60)+1
         } else {
             indexAll = 80
-            indexCorrect = Random.nextInt(70)+1
+            indexCorrect = Random.nextInt(80)+1
         }
 
         var tvIndexAll = findViewById<TextView>(R.id.tv_length)
